@@ -12147,6 +12147,7 @@ __metadata:
     styled-components: "npm:^6.1.13"
     typescript: "npm:^4.4.2"
     web-vitals: "npm:^2.1.0"
+    workbox-core: "npm:^7.3.0"
     yup: "npm:^1.6.1"
   languageName: unknown
   linkType: soft
@@ -14164,6 +14165,13 @@ __metadata:
   version: 6.5.4
   resolution: "workbox-core@npm:6.5.4"
   checksum: 10c0/dac894674219035316e3354955343cf7eec4b014a58712cb6139c3c97e4b7c40265403b15d339f8a318304193340485d9a0757255c88cb23d2e6a59b55224a41
+  languageName: node
+  linkType: hard
+
+"workbox-core@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "workbox-core@npm:7.3.0"
+  checksum: 10c0/b7dce640cd9665ed207f65f5b08a50e2e24e5599790c6ea4fec987539b9d2ef81765d8c5f94acfee3a8a45d5ade8e1a4ebd0b8847a1471302ef75a5b93c7bd04
   languageName: node
   linkType: hard
 
