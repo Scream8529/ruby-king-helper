@@ -1,5 +1,5 @@
 #docker build -f Dockerfile -t ruby-help .
-#docker run -p 3004:80 -t ruby-help
+#docker run -p 3354:80 -t ruby-help
 
 FROM mirror.gcr.io/node:alpine AS builder
 

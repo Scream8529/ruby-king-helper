@@ -7,19 +7,16 @@ import { Recipe } from '../models/recipe';
 
 const Selected: React.FC = () => {
    const [selected, setSelected] = useLocalStorage<string[]>('selectedRecipes', []);
-   const [collected, setCollected] = useLocalStorage<string[]>('collectedResources', []);
+   const [collected, setCollected] = useLocalStorage<Record<string, number>>('collectedResources', {});
 
    const selectedRecipes = RECIPES.filter(r => selected.includes(r.id));
 
-   // Обработка групповой отметки из ResourceTracker
-   const handleCollect = (resourceIds: string[], checked: boolean) => {
-      if (checked) {
-         // Добавить все resourceIds, без дублей
-         setCollected(Array.from(new Set([...collected, ...resourceIds])));
-      } else {
-         // Удалить все resourceIds
-         setCollected(collected.filter(id => !resourceIds.includes(id)));
-      }
+   // Обработка изменения количества собранного ресурса
+   const handleCollect = (resourceId: string, count: number) => {
+      setCollected({
+         ...collected,
+         [resourceId]: count
+      });
    };
 
    const handleRemove = (recipe: Recipe) => {

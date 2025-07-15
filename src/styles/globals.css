@@ -47,6 +47,21 @@ nav {
         width: 100%;
         font-size: 1.1rem;
     }
+    .MuiListItem-root {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        min-height: 80px !important;
+    }
+    .MuiAvatar-root {
+        margin-bottom: 8px !important;
+    }
+    .MuiListItemText-root {
+        margin-bottom: 8px !important;
+    }
+    .MuiTextField-root {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 .container {

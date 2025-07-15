@@ -1,0 +1,22 @@
+export type ResourceInfo = {
+   id: string;
+   name: string;
+   icon: string;
+   totalCount: number;
+   desc?: string;
+   rarity?: string;
+   category?: string;
+   craftElem?: string;
+   grade?: string;
+   price?: number;
+   weight?: number;
+   typeElement?: string;
+   needExp?: number;
+   craftRecipe?: string;
+   craftMinLvl?: number;
+   craftChance?: number;
+   craftRecipeType?: string;
+   craftElemIcon?: string;
+   authorService?: string;
+   children?: ResourceInfo[];
+};

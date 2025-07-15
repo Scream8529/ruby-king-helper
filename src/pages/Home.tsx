@@ -6,6 +6,7 @@ import { Recipe } from '../models/recipe';
 
 const Home: React.FC = () => {
     const [selected, setSelected] = useLocalStorage<string[]>('selectedRecipes', []);
+
     const handleSelect = (recipe: Recipe) => {
         if (!selected.includes(recipe.id)) {
             setSelected([...selected, recipe.id]);
